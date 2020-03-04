@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>测试试验 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个测试博客用于检测是否能够远端推送 我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件里面是博客内容，可以使用 markdown 格式。 然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; hexo d; 命令。 其次运行 hexo s; 命令使博客在本地 localhost: 8000 部署。 最后 ctrl+c 退出 he">
+  <meta name="description" content="这是一个测试博客用于检测是否能够远端推送并修改博客主页以下是新建博客并部署到服务器的过程 我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件里面是博客内容，可以使用 markdown 格式。  然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; 命令。  其次运行 hexo s; 命令使博客在本地 localhost: 4000 部">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试试验">
 <meta property="og:url" content="http://yoursite.com/2020/03/04/%E6%B5%8B%E8%AF%95%E8%AF%95%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这是一个测试博客用于检测是否能够远端推送 我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件里面是博客内容，可以使用 markdown 格式。 然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; hexo d; 命令。 其次运行 hexo s; 命令使博客在本地 localhost: 8000 部署。 最后 ctrl+c 退出 he">
+<meta property="og:description" content="这是一个测试博客用于检测是否能够远端推送并修改博客主页以下是新建博客并部署到服务器的过程 我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件里面是博客内容，可以使用 markdown 格式。  然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; 命令。  其次运行 hexo s; 命令使博客在本地 localhost: 4000 部">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-04T08:31:31.908Z">
-<meta property="article:modified_time" content="2020-03-04T08:42:34.654Z">
+<meta property="article:modified_time" content="2020-03-04T09:08:18.338Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -174,11 +174,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="这是一个测试博客"><a href="#这是一个测试博客" class="headerlink" title="这是一个测试博客"></a>这是一个测试博客</h2><p>用于检测是否能够远端推送</p>
-<p>我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件<br>里面是博客内容，可以使用 markdown 格式。</p>
-<p>然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; hexo d; 命令。</p>
-<p>其次运行 hexo s; 命令使博客在本地 localhost: 8000 部署。</p>
-<p>最后 ctrl+c 退出 hexo 命令行，再输入 hexo d 将博客部署到远端服务器。</p>
+        <h1 id="这是一个测试博客"><a href="#这是一个测试博客" class="headerlink" title="这是一个测试博客"></a>这是一个测试博客</h1><h2 id="用于检测是否能够远端推送并修改博客主页"><a href="#用于检测是否能够远端推送并修改博客主页" class="headerlink" title="用于检测是否能够远端推送并修改博客主页"></a>用于检测是否能够远端推送并修改博客主页</h2><h3 id="以下是新建博客并部署到服务器的过程"><a href="#以下是新建博客并部署到服务器的过程" class="headerlink" title="以下是新建博客并部署到服务器的过程"></a>以下是新建博客并部署到服务器的过程</h3><ul>
+<li><p>我们先在 ..\blog\source_posts 文件夹下新建一个 .md 文件<br>里面是博客内容，可以使用 markdown 格式。</p>
+</li>
+<li><p>然后再 cmd 中进入到 hexo 目录下，依次运行 hexo c; hexo g; 命令。</p>
+</li>
+<li><p>其次运行 hexo s; 命令使博客在本地 localhost: 4000 部署。</p>
+</li>
+<li><p>最后 ctrl+c 退出 hexo 命令行，再输入 hexo d 将博客部署到远端服务器。</p>
+</li>
+</ul>
+<h3 id="以下是修改博客主页的过程"><a href="#以下是修改博客主页的过程" class="headerlink" title="以下是修改博客主页的过程"></a>以下是修改博客主页的过程</h3><ul>
+<li><p>下载主题 cmd 中： git clone <a href="http://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">http://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+</li>
+<li><p>下载好的主题在 themes 文件夹下</p>
+</li>
+<li><p>修改 _config.yml 文件: cmd 中输入  vim _config.yml  </p>
+</li>
+<li><p>找到 theme: landscape  改为 theme: yilia<br><del>上述两步可直接在 _config.yml 文件中修改</del></p>
+</li>
+<li><p>wq 保存退出</p>
+</li>
+<li><p>然后 hexo c; hexo g; hexo s; </p>
+</li>
+<li><p>ctrl+c 退出，然后 hexo d 部署到远端</p>
+</li>
+</ul>
 
       
 
