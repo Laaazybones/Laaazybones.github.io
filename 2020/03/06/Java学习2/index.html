@@ -8,13 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java语言程序设计学习笔记（二） | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="2 Java基本语法">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Java语言程序设计学习笔记（二）">
-<meta property="og:url" content="http://yoursite.com/2020/03/05/Java%E5%AD%A6%E4%B9%A02/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/03/06/Java%E5%AD%A6%E4%B9%A02/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="2 Java基本语法">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-05T12:53:45.933Z">
+<meta property="article:published_time" content="2020-03-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-06T12:40:49.304Z">
 <meta property="article:author" content="CoCo">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -66,7 +68,7 @@
     		总文章数 4
 		</nav>
 		<nav>
-   			总字数 <span class="post-count">1.2k</span>
+   			总字数 <span class="post-count">2.6k</span>
 		</nav>
 		
 		<nav class="header-smart-menu">
@@ -168,18 +170,123 @@
   
 
         
-        <a href="/2020/03/05/Java%E5%AD%A6%E4%B9%A02/" class="archive-article-date">
-  	<time datetime="2020-03-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+        <a href="/2020/03/06/Java%E5%AD%A6%E4%B9%A02/" class="archive-article-date">
+  	<time datetime="2020-03-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-        字数：0字 | 预计阅读时长：1分钟
+        字数：1.4k字 | 预计阅读时长：5分钟
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="2-Java基本语法"><a href="#2-Java基本语法" class="headerlink" title="2 Java基本语法"></a>2 Java基本语法</h1><a id="more"></a>
+<h2 id="2-1-关键字与保留字"><a href="#2-1-关键字与保留字" class="headerlink" title="2.1 关键字与保留字"></a>2.1 关键字与保留字</h2><h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><p>在Java语言编程时，在关键的地方使用的单词。体现关键的地方的含义。这些单词都是特有的，事先定义好的。所有关键字都小写。</p>
+<h4 id="保留字"><a href="#保留字" class="headerlink" title="保留字"></a>保留字</h4><p>可能在未来版本被作为关键字的词。Java已经把这些单词预定，这些词尽量不在编程中随意使用。<br> <code>byValue</code>  <code>cast</code>  <code>future</code>   <code>generic</code>  <code>inner</code>  <code>operator</code>  <code>outer</code>  <code>rest</code>  <code>var</code>  <code>goto</code>  <code>const</code></p>
+<h2 id="2-2-标识符"><a href="#2-2-标识符" class="headerlink" title="2.2 标识符"></a>2.2 标识符</h2><ul>
+<li>在起名的地方用：变量/方法/类</li>
+<li>由英文/数字/_或$组成</li>
+<li>数字不可以开头</li>
+<li>不可使用关键字和保留字，但可以<strong>包含</strong>关键字和保留字</li>
+<li>严格区分大小写，长度无限</li>
+<li>不能有空格</li>
+<li>需注意最好见名知意</li>
+<li>命名规范：<ul>
+<li>包名：多单词组成时所有字母都小写 <code>xxxyyyzzz</code></li>
+<li>类名、接口名：所有单词首字母大写 <code>XxxYyyZzz</code></li>
+<li>变量名、方法名：多单词，第一个单词首字母小写，后面所有单词首字母大写 <code>xxxYyyZzz</code></li>
+<li>常量名：所有字母都大写。多单词时每个单词间用下划线连接 <code>XXX_YYY_ZZZ</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="2-3-变量"><a href="#2-3-变量" class="headerlink" title="2.3 变量"></a>2.3 变量</h2><ul>
+<li><p>Java中变量的定义： <code>数据类型 变量名 = 变量的值</code>，如： </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>变量的声明与注意事项：</p>
+<ul>
+<li>变量放在内存中</li>
+<li>有自己的名称（变量名）和类型（数据类型）</li>
+<li>必须先声明后使用</li>
+<li>该区域的数据可以在同一类型范围内不断变化</li>
+<li>注意：声明变量过程中的 <code>=</code> 不是数学意义上的等号，代表“赋值”。</li>
+</ul>
+</li>
+<li><p>使用变量注意</p>
+<ul>
+<li>变量在一对<code>{}</code>中有效</li>
+<li>要初始化</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-4-数据类型"><a href="#2-4-数据类型" class="headerlink" title="2.4 数据类型"></a>2.4 数据类型</h2><ul>
+<li><strong>变量的分类</strong><ul>
+<li>变量的类型：声明的变量的数据类型<ul>
+<li>基本数据类型： 1. 数值型（整数类型（<code>byte</code> <code>short</code> <code>int</code> <code>long</code>）、浮点类型（<code>float</code>、<code>double</code>）） 2. 字符型（<code>char</code>） 3. 布尔型（<code>boolean</code>）</li>
+<li>引用数据类型： 1. 类（<code>class</code>） 2. 接口（<code>interface</code>） 3. 数组（<code>[]</code>）</li>
+<li>注意：Java默认数据类型为<code>int</code>，声明<code>long</code>型常量后面要接<code>l</code>或<code>L</code>，浮点型常量默认为<code>double</code>型，声明<code>float</code>型常量后面要接<code>f</code>或<code>F</code></li>
+</ul>
+</li>
+<li><code>boolean</code>类型<ul>
+<li>适用于逻辑运算，一般用于程序流程控制：<code>if while</code>/<code>do-while</code>/<code>for</code></li>
+<li>取值只有<code>true</code>或<code>false</code>，无<code>null</code>，不能用0或非0来代替<code>true</code>或<code>false</code></li>
+</ul>
+</li>
+<li>引用类型：<code>String</code>类    <ul>
+<li>值<code>null</code>可以赋值给任意引用类型（类、接口、数组）的变量，用以表示这个引用类型变量中保存的地址为空。</li>
+<li><code>String</code>类属于引用类型，初始化可用<code>null</code>赋值。</li>
+<li><code>String</code>类是一个典型的不可变类，<code>String</code>对象创建出来就不可以被改变。创建出来的字符串被存放在数据区，保证每个字符串常量只有一个，不会产生多个副本。</li>
+<li><code>String s0 = &quot;hello&quot;;</code></li>
+<li><code>String s1 = &quot;he&quot; + &quot;ll&quot; + &quot;o&quot;;</code></li>
+<li>字符串：由至少0个字符组成的一个串，用双引号</li>
+<li><code>String str = &quot;Hello world&quot;;</code></li>
+<li><code>System.out.println(str);</code></li>
+<li>内存中不会存在相同的字符串，只会存在一个字符串，变量指向该字符串的内存地址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-5-基本数据类型转换"><a href="#2-5-基本数据类型转换" class="headerlink" title="2.5 基本数据类型转换"></a>2.5 基本数据类型转换</h2><ul>
+<li>自动转换类型： 容量小的类型自动转换为容量大的数据类型。数据类型按容量大小分为：<blockquote>
+<p>（char short byte）-&gt; int -&gt; long -&gt; float -&gt; double （byte最小）</p>
+</blockquote>
+</li>
+<li>当有多种数据类型混合运算时，编译器首先将所有数据类型转换为容量最大的那个，然后再计算。</li>
+<li><code>byte</code> <code>short</code> <code>char</code> 三者之间不会相互转换。</li>
+<li>当把任何基本类型的值和字符串值进行连接运算时<code>+</code>，基本类型的值将自动转化为字符串类型。<code>+</code>前的数字会做数学运算，<code>+</code>后的数字直接按照字符串连接。 例如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"abc"</span>; <span class="keyword">int</span> i = <span class="number">1</span>; System.out.println(str + i); <span class="comment">// 结果为 "abc1"</span></span><br><span class="line">System.out.println(<span class="number">3</span>+<span class="number">4</span>+<span class="string">"hello"</span>); <span class="comment">// 输出为7hello</span></span><br><span class="line">System.out.println(<span class="string">"hello"</span>+<span class="number">3</span>+<span class="number">4</span>); <span class="comment">// 输出为hello34</span></span><br><span class="line">String str = <span class="number">1</span> + <span class="number">2</span> + <span class="number">3</span> + <span class="string">"a"</span> + <span class="number">4</span>; <span class="comment">// 输出为6a4</span></span><br></pre></td></tr></table></figure></li>
+<li>强制类型转换：<ul>
+<li>自动类型转换的逆过程，将容量大的数据类型转换为容量小的数据类型。使用时要加上强制转换符<code>()</code>，但可能造成精度降低或溢出。例如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">7</span>; <span class="keyword">byte</span> b = (<span class="keyword">byte</span>)a;</span><br></pre></td></tr></table></figure></li>
+<li>通常，字符串不能直接强制转换为基本类型，但通过基本类型对应的包装类则可以实现把字符串转换成基本类型。例如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String a = <span class="string">"43"</span>; <span class="keyword">int</span> i = Integer.parselnt(a);</span><br></pre></td></tr></table></figure></li>
+<li><code>boolean</code>类型不能转换成其他类型。</li>
+<li>几个例子：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> a = <span class="number">4</span>; a = a - <span class="number">5</span>; <span class="comment">// 错，5被自动定义为int型数据</span></span><br><span class="line"><span class="keyword">byte</span> a = <span class="number">5</span>; <span class="keyword">short</span> b = <span class="number">4</span>; <span class="keyword">short</span> c = a + b; <span class="comment">// 错，byte short char之间不能相互转化，他们三者计算时，先转换成int类型。</span></span><br><span class="line"><span class="comment">// 所以应该为:</span></span><br><span class="line"><span class="keyword">short</span> c = (<span class="keyword">short</span>) a + b;</span><br></pre></td></tr></table></figure>
+<h2 id="2-6-运算符"><a href="#2-6-运算符" class="headerlink" title="2.6 运算符"></a>2.6 运算符</h2></li>
+</ul>
+</li>
+<li>表示数据的运算、赋值、比较。<ul>
+<li>算数运算符</li>
+<li>赋值运算符</li>
+<li>比较运算符（关系运算符）</li>
+<li>逻辑运算符</li>
+<li>位运算符</li>
+<li>三元运算符</li>
+</ul>
+</li>
+<li>算数运算符注意点<ul>
+<li>如果对负数取模，可以把模数负号忽略，如：<code>5%-2=1</code>。但当被模数是负数时，则不可以忽略。<strong>此外，取模运算的结果不一定是整数</strong>。</li>
+</ul>
+</li>
+<li>赋值运算符注意点<ul>
+<li>支持连续赋值</li>
+<li>使用 <code>+=</code> <code>-=</code> <code>\=</code> <code>*=</code> 时，会<strong>自动强制转换等号右边的数据类型</strong>为适宜数据类型。例如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">1</span>; i *= <span class="number">0.1</span>; <span class="comment">// 输出为0 等号右边强制转换成int型，保留整数部分。</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>比较运算符注意点<ul>
+<li>结果都是<code>boolean</code>类型。</li>
+</ul>
+</li>
+</ul>
+
       
 
       
@@ -248,7 +355,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/05/Java%E5%AD%A6%E4%B9%A02/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/06/Java%E5%AD%A6%E4%B9%A02/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -262,18 +369,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/05/Sublime%20Text3%20Markdown%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Sublime Text3 Markdown插件安装与配置
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/04/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%B5%8B%E8%AF%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">这是一个测试</div>
+    <a href="/2020/03/05/Java%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java语言程序设计学习笔记（一）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -300,7 +398,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Java基本语法"><span class="toc-number">1.</span> <span class="toc-text">2 Java基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-关键字与保留字"><span class="toc-number">1.1.</span> <span class="toc-text">2.1 关键字与保留字</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关键字"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#保留字"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">保留字</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-标识符"><span class="toc-number">1.2.</span> <span class="toc-text">2.2 标识符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-变量"><span class="toc-number">1.3.</span> <span class="toc-text">2.3 变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-数据类型"><span class="toc-number">1.4.</span> <span class="toc-text">2.4 数据类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-基本数据类型转换"><span class="toc-number">1.5.</span> <span class="toc-text">2.5 基本数据类型转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-运算符"><span class="toc-number">1.6.</span> <span class="toc-text">2.6 运算符</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
