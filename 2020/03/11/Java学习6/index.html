@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: Java | </title>
+  <title>Java语言程序设计学习笔记（六） | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title">
-<meta property="og:url" content="http://yoursite.com/tags/Java/index.html">
+  <meta name="description" content="第四章 面向对象（2）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java语言程序设计学习笔记（六）">
+<meta property="og:url" content="http://yoursite.com/2020/03/11/Java%E5%AD%A6%E4%B9%A06/index.html">
 <meta property="og:site_name">
+<meta property="og:description" content="第四章 面向对象（2）">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-11T11:57:42.686Z">
 <meta property="article:author" content="CoCo">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="" type="application/atom+xml">
@@ -153,36 +158,220 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Java学习6" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Java语言程序设计学习笔记（六）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/11/Java%E5%AD%A6%E4%B9%A06/" class="archive-article-date">
+
+        
+        <a href="/2020/03/11/Java%E5%AD%A6%E4%B9%A06/" class="archive-article-date">
   	<time datetime="2020-03-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/11/Java%E5%AD%A6%E4%B9%A06/">Java语言程序设计学习笔记（六）</a>
-    </h1>
-  
+        
+      </header>
+      <div align="center" class="post-count">
+        字数：2.4k字 | 预计阅读时长：9分钟
+      </div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第四章-面向对象（2）"><a href="#第四章-面向对象（2）" class="headerlink" title="第四章 面向对象（2）"></a>第四章 面向对象（2）</h1><a id="more"></a>
+<h2 id="4-4-类的成员之一：方法"><a href="#4-4-类的成员之一：方法" class="headerlink" title="4.4 类的成员之一：方法"></a>4.4 类的成员之一：方法</h2><ul>
+<li>语法格式：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名（参数列表）&#123;</span><br><span class="line">	方法体语句；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>说明：<ul>
+<li>修饰符：<code>public</code> <code>private</code> <code>protected</code> 等</li>
+<li>返回值类型：<code>return</code> 语句传递返回值。没有返回值: <code>void</code></li>
+</ul>
+</li>
+<li>举例：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;		<span class="comment">// 声明方法getAge</span></span><br><span class="line">		<span class="keyword">return</span> age;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;  <span class="comment">// 声明方法setAge</span></span><br><span class="line">		age = i;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><strong>注意：</strong><ul>
+<li>可以在方法中调用方法，但不能在方法内定义方法。</li>
+<li><strong>同一个类中</strong>，所有的方法可以直接相互调用，不用 new 去实例化对象。<br>如:<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showName</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"姓名："</span>+name);</span><br><span class="line">		getAge();	<span class="comment">// 调用同类中的方法</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> age;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-5-匿名对象"><a href="#4-5-匿名对象" class="headerlink" title="4.5 匿名对象"></a>4.5 匿名对象</h2><ul>
+<li>可以不定义对象的句柄，而直接调用这个对象的方法。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person();</span><br><span class="line">p.getAge();</span><br><span class="line"><span class="comment">// 可写成：</span></span><br><span class="line"><span class="keyword">new</span> Person().getAge();	<span class="comment">// 直接调用类为Person的对象中的方法getAge()</span></span><br></pre></td></tr></table></figure></li>
+<li>使用情况：<ul>
+<li>对一个对象<strong>只需要进行一次</strong>方法调用；</li>
+<li>经常<strong>将匿名对象作为实参</strong>传递给一个方法调用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-6-类的访问机制"><a href="#4-6-类的访问机制" class="headerlink" title="4.6 类的访问机制"></a>4.6 类的访问机制</h2><p>static 方法 不能 访问非 static 的成员变量。</p>
+<h2 id="4-7-方法的重载（overload）"><a href="#4-7-方法的重载（overload）" class="headerlink" title="4.7 方法的重载（overload）"></a>4.7 方法的重载（overload）</h2><ul>
+<li>在同一个类中，要使用同一个方法名，需要<strong>保证方法的参数个数或参数类型不同，参数顺序不同也可以重载</strong></li>
+<li>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">double</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b + c;</span><br><span class="line">&#125;		<span class="comment">//三者可共存于同一个类中</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h2 id="4-8-未知传递参数个数"><a href="#4-8-未知传递参数个数" class="headerlink" title="4.8 未知传递参数个数"></a>4.8 未知传递参数个数</h2><ul>
+<li>用数组的方式传递<strong>可变个数</strong>的参数：(<strong>如果没有参数，就要定义一个空数组或null</strong> 如：<code>p1.printInfo(null)</code>)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printInfo</span><span class="params">(String[] agrs)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; agrs.length; i++)&#123;</span><br><span class="line">	System.out.println(agrs[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>用Java特有的<code>...</code>方式传递可变个数(0-∞)的参数，使用时与数组方式相同：(<strong>如果没有参数，可以不填</strong> 如：<code>p1.printInfo1()</code>)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printInfo1</span><span class="params">(String... agrs)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; agrs.length; i++)&#123;</span><br><span class="line">	System.out.println(agrs[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>设实例化为p1后，可直接在方法参数里赋值：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">p1.printInfo1(<span class="string">"zhangsan"</span>,<span class="string">"12"</span>);</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>如果一个方法有多个形参，那么可变的形参(如<code>...</code>这样的参数)一定要放在<strong>最后</strong>。如： <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Test</span><span class="params">(<span class="keyword">int</span> age, String... args)</span></span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="4-9-方法的参数传递"><a href="#4-9-方法的参数传递" class="headerlink" title="4.9 方法的参数传递"></a>4.9 方法的参数传递</h2><ul>
+<li>方法只有被调用才有意义</li>
+<li>基础<strong>变量值</strong>存在JVM内存的栈中；<strong>对象的值</strong>存在堆中，<strong>对象在堆中的地址</strong>存在栈中。</li>
+<li><strong>基本数据类型都是保存在栈内存中</strong>，<strong>引用对象在栈内存中保存的是引用对象的地址</strong>，那么<strong>方法的参数传递是传递值</strong>（是<strong>变量在栈内存中的值</strong>）</li>
+</ul>
+<h2 id="4-10-软件包"><a href="#4-10-软件包" class="headerlink" title="4.10 软件包"></a>4.10 软件包</h2><ul>
+<li>关键字<code>package</code>，作为 Java 源文件的第一条语句，指明该文件中定义的类所在的包。如缺省该句，则定义为无名包，格式为：<code>package 顶层包名.子包名;</code></li>
+<li>包用<code>.</code>来代表层级，<strong>包名用小写单词</strong>，<strong>类名用首字母大写单词</strong></li>
+<li>在包里面<strong>引用</strong>其他包内的类，用语句： <code>import 包名.类名</code>。也可直接在类中写： <code>包名.类名</code></li>
+<li><code>import 包名.类名.*</code>  表示引用包下所有类</li>
+</ul>
+<h2 id="4-11-面向对象特征之一：封装和隐藏"><a href="#4-11-面向对象特征之一：封装和隐藏" class="headerlink" title="4.11 面向对象特征之一：封装和隐藏"></a>4.11 面向对象特征之一：封装和隐藏</h2><ul>
+<li>通过将数据声明为私有的（private）, 再提供公共的（public）方法：<code>getXxx()</code>和<code>setXxx()</code>实现对该属性的操作，以实现：<ul>
+<li>使用者只能通过<strong>事先定制好的</strong>方法来访问数据，可以方便地加入控制逻辑，限制对属性的不合理操作；</li>
+<li>便于修改，增强代码的可维护性。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;		<span class="comment">// 变量声明为私有</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">setAge</span> <span class="params">(a)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (a&lt;=<span class="number">150</span> &amp;&amp; a&gt;=<span class="number">0</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">"输入的年龄不符合要求"</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> (age = a)&#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">printAge</span> <span class="params">(age)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"年龄为："</span>+age+<span class="string">" 岁"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-12-四种访问权限修饰符"><a href="#4-12-四种访问权限修饰符" class="headerlink" title="4.12 四种访问权限修饰符"></a>4.12 四种访问权限修饰符</h2><ul>
+<li><p>Java权限修饰符 <code>public</code> <code>protected</code> <code>private</code> 置于类的成员定义前，用于限定对象对该类成员的访问权限。</p>
+<table>
+<thead>
+<tr>
+<th align="center">修饰符</th>
+<th align="center">类内部</th>
+<th align="center">同一个包</th>
+<th align="center">子类</th>
+<th align="center">任何地方</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">private</td>
+<td align="center">yes</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">(缺省)</td>
+<td align="center">yes</td>
+<td align="center"></td>
+<td align="center">yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">protected</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">public</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>对于 <code>class</code> 的权限修饰<strong>只可以用 <code>public</code> 和 <code>default（缺省）</code></strong>。</p>
+</li>
+<li><p><code>public</code> 类可以在<strong>任意地方</strong>被访问。</p>
+</li>
+<li><p><code>defaul</code> 类只可以在<strong>同一个包内部的类</strong>访问。</p>
+</li>
+<li><p>父子类继承：<br>如： 存在父包 day06 子包 day06.test </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> day06.test;		<span class="comment">// 在day06.test包下</span></span><br><span class="line"><span class="keyword">import</span> day06.Person;	<span class="comment">// 引用一个day06中叫Person的类</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 通过extends可以构成父子类的关系</span></span><br><span class="line"><span class="comment">* PersonChild 就是day06 下Person的子类</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PersonChild</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(age);	<span class="comment">// 当Person中age和getAge()是public类型时，此处可调用，是缺省或private类型时不可调用。</span></span><br><span class="line">		getAge;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>在同一个Java文件中可以写多个class，<strong>但是只能有一个public类型</strong>，<strong>其他的类只能是缺省型</strong>。</p>
+</li>
+</ul>
+<h2 id="4-13-类的成员之三：构造器（构造方法）"><a href="#4-13-类的成员之三：构造器（构造方法）" class="headerlink" title="4.13 类的成员之三：构造器（构造方法）"></a>4.13 类的成员之三：构造器（构造方法）</h2><p><code>Person p = new Person();</code><br><strong>new 的由来：</strong><br>在定义方法 <code>public void Person(){}</code> 时，<code>Person(){}</code>内<strong>自动生成</strong> <code>public person(){}</code>, <strong>可以不写</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Person</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;	<span class="comment">// 自动生成的，可以不写，new 对象的由来</span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;`</span><br></pre></td></tr></table></figure>
+
+<p><strong>自定义构造器：</strong><br><strong>手动初始化:</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;	  <span class="comment">// 自定义初始化Person对象，可以在new Person()对象时自动赋予自定义初值；</span></span><br><span class="line">        age = <span class="number">1</span>;</span><br><span class="line">        name = <span class="string">"zhangsan"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">public</span> String name;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(age);</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>在new对象的时候能自己给属性不同的值</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> a, String n)</span></span>&#123;		<span class="comment">// 自定义构造器</span></span><br><span class="line">        age = a;</span><br><span class="line">        name = n;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">public</span> String name;    </span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;  </span><br><span class="line">        System.out.println(age);</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Person p = <span class="keyword">new</span> Person(<span class="number">2</span>, <span class="string">"zhangsan"</span>);	<span class="comment">// 如此可直接在new对象的时候赋予初值</span></span><br><span class="line">    p.showInfo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>构造器注意点：</strong></p>
+<ul>
+<li>Java语言中，每个类<strong>至少有一个</strong>构造器；</li>
+<li>默认构造器的修饰符与所属类的修饰符相同；</li>
+<li>一旦显示定义了构造器，则系统不再提供默认构造器；</li>
+<li>一个类可以创建多个重载的构造器；</li>
+<li><strong>父类的构造器不可被子类继承</strong>。</li>
+<li><strong>new对象实际就是调用类的构造方法</strong>。</li>
+</ul>
+<p><strong>构造器的重载（构造方法的重载）</strong></p>
+<ul>
+<li>构造器的重载，是为了方便调用方可以灵活地创建出不同需要的对象。</li>
+<li>重载的多个构造方法实际上就是<strong>相当于提供了多个初始化 new 对象的模板</strong>。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String n,<span class="keyword">int</span> a)</span></span>&#123;	<span class="comment">// 自定义构造器</span></span><br><span class="line">		name = n;</span><br><span class="line">		a = age;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>构造器重载使得对象创建更加灵活，方便创建不同的对象：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String n)</span></span>&#123;	<span class="comment">// 构造器重载</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String n,<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：构造器重载，参数列表必须不同。</strong></p>
+<h2 id="4-14-关键字-this"><a href="#4-14-关键字-this" class="headerlink" title="4.14 关键字 this"></a>4.14 关键字 this</h2><ul>
+<li><code>this</code> 在<strong>方法内部</strong>使用，即<strong>这个方法所属对象的引用</strong>；</li>
+<li><code>this</code> 在<strong>构造器内部</strong>使用，<strong>表示该构造器正在初始化的对象</strong>；</li>
+<li><code>this</code> 表示当前对象，可以调用类的属性、方法和构造器；</li>
+<li>在<strong>方法内</strong>需要用到该方法的对象时，用 <code>this</code> 。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> age,String name)</span></span>&#123;       <span class="comment">// 自定义构造器 </span></span><br><span class="line">        <span class="keyword">this</span>.age = age;	    <span class="comment">// 用this表示将形参的age赋值给类中属性变量age</span></span><br><span class="line">        <span class="keyword">this</span>.name = name;    <span class="comment">// 当形参与成员变量同名时，如果在 方法内部 需要使用成员变量，必须添加this来表明该变量是类成员</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName1</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.setName(name);	<span class="comment">// 用this来调用类中的方法。   </span></span><br><span class="line">    &#125;	<span class="comment">// 在任意方法内，如果使用当前类的成员变量或成员方法可以在其前面添加this，增强程序阅读性</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"姓名："</span>+<span class="keyword">this</span>.name);     </span><br><span class="line">        System.out.println(<span class="string">"年龄："</span>+<span class="keyword">this</span>.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>用 <code>this()</code> 来<strong>调用构造</strong>，可以作为一个类中，<strong>构造器相互调用</strong>的特殊格式<br>如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;	<span class="comment">// 构造器</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>();	<span class="comment">// 等同于调用public Person()</span></span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="number">12</span>);	<span class="comment">// 等同于调用public Person(int age)</span></span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> age)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="string">"zhangsan"</span>);	<span class="comment">// 等同于调用public Person(String name)</span></span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<blockquote>
+<ol>
+<li>使用 <code>this()</code> <strong>必须放在构造器的首行</strong>；</li>
+<li>使用 <code>this()</code> 调用本类中的其他构造器，保证<strong>至少一个</strong>构造器是没有<code>this()</code>的。 （即<strong>不能自己调用自己</strong>）</li>
+</ol>
+</blockquote>
+<h2 id="4-15-JavaBean-实体类"><a href="#4-15-JavaBean-实体类" class="headerlink" title="4.15 JavaBean 实体类"></a>4.15 JavaBean 实体类</h2><ul>
+<li><code>JavaBean</code> 是一种 Java 语言写成的<strong>可重用组件</strong></li>
+<li>所谓 <code>JavaBean</code>，是指符合如下标准的 Java 类： <blockquote>
+<ol>
+<li>类是公共的</li>
+<li>有一个无参的公共的构造器</li>
+<li>有属性，<strong>属性一般是私有的</strong>，且有对应的<code>get</code> <code>set</code>方法</li>
+</ol>
+</blockquote>
+</li>
+<li>用户可以使用 <code>JavaBean</code> 将 <u><em>功能、处理、值、数据库访问和其他任何可以用Java代码创造的对象</em></u> 进行打包，并且其他的开发者可以通过内部的JSP页面、Servlet、其他JavaBean、applet程序或应用来使用这些对象。用户可以认为 JavaBean 提供了一种<strong>随时随地的复制和粘贴功能</strong>，而<strong>不用关心任何改变</strong>。 </li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,209 +383,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/11/Java%E5%AD%A6%E4%B9%A06/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/09/Java%E5%AD%A6%E4%B9%A05/" class="archive-article-date">
-  	<time datetime="2020-03-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/09/Java%E5%AD%A6%E4%B9%A05/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java语言程序设计学习笔记（五）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/09/Java%E5%AD%A6%E4%B9%A05/">Java语言程序设计学习笔记（五）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第四章-面向对象（2）"><span class="toc-number">1.</span> <span class="toc-text">第四章 面向对象（2）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-类的成员之一：方法"><span class="toc-number">1.1.</span> <span class="toc-text">4.4 类的成员之一：方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-匿名对象"><span class="toc-number">1.2.</span> <span class="toc-text">4.5 匿名对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6-类的访问机制"><span class="toc-number">1.3.</span> <span class="toc-text">4.6 类的访问机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-7-方法的重载（overload）"><span class="toc-number">1.4.</span> <span class="toc-text">4.7 方法的重载（overload）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-8-未知传递参数个数"><span class="toc-number">1.5.</span> <span class="toc-text">4.8 未知传递参数个数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-9-方法的参数传递"><span class="toc-number">1.6.</span> <span class="toc-text">4.9 方法的参数传递</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-10-软件包"><span class="toc-number">1.7.</span> <span class="toc-text">4.10 软件包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-11-面向对象特征之一：封装和隐藏"><span class="toc-number">1.8.</span> <span class="toc-text">4.11 面向对象特征之一：封装和隐藏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-12-四种访问权限修饰符"><span class="toc-number">1.9.</span> <span class="toc-text">4.12 四种访问权限修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-13-类的成员之三：构造器（构造方法）"><span class="toc-number">1.10.</span> <span class="toc-text">4.13 类的成员之三：构造器（构造方法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-14-关键字-this"><span class="toc-number">1.11.</span> <span class="toc-text">4.14 关键字 this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-15-JavaBean-实体类"><span class="toc-number">1.12.</span> <span class="toc-text">4.15 JavaBean 实体类</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/08/Java%E5%AD%A6%E4%B9%A04/" class="archive-article-date">
-  	<time datetime="2020-03-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/08/Java%E5%AD%A6%E4%B9%A04/">Java语言程序设计学习笔记（四）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/07/Java%E5%AD%A6%E4%B9%A03/" class="archive-article-date">
-  	<time datetime="2020-03-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/07/Java%E5%AD%A6%E4%B9%A03/">Java语言程序设计学习笔记（三）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/06/Java%E5%AD%A6%E4%B9%A02/" class="archive-article-date">
-  	<time datetime="2020-03-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/06/Java%E5%AD%A6%E4%B9%A02/">Java语言程序设计学习笔记（二）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/05/Java%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-03-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/05/Java%E5%AD%A6%E4%B9%A0/">Java语言程序设计学习笔记（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -422,9 +521,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
