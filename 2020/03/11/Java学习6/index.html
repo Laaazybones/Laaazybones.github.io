@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java语言程序设计学习笔记（六） | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第四章 面向对象（2）">
+  <meta name="description" content="第三章 面向对象（2）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java语言程序设计学习笔记（六）">
 <meta property="og:url" content="http://yoursite.com/2020/03/11/Java%E5%AD%A6%E4%B9%A06/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="第四章 面向对象（2）">
+<meta property="og:description" content="第三章 面向对象（2）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-11T11:57:42.686Z">
+<meta property="article:modified_time" content="2020-05-19T11:19:14.864Z">
 <meta property="article:author" content="CoCo">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -65,10 +65,10 @@
 			</ul>
 		</nav>
 		<nav>
-    		总文章数 9
+    		总文章数 10
 		</nav>
 		<nav>
-   			总字数 <span class="post-count">7.5k</span>
+   			总字数 <span class="post-count">9.9k</span>
 		</nav>
 		
 		<nav class="header-smart-menu">
@@ -181,8 +181,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第四章-面向对象（2）"><a href="#第四章-面向对象（2）" class="headerlink" title="第四章 面向对象（2）"></a>第四章 面向对象（2）</h1><a id="more"></a>
-<h2 id="4-4-类的成员之一：方法"><a href="#4-4-类的成员之一：方法" class="headerlink" title="4.4 类的成员之一：方法"></a>4.4 类的成员之一：方法</h2><ul>
+        <h1 id="第三章-面向对象（2）"><a href="#第三章-面向对象（2）" class="headerlink" title="第三章 面向对象（2）"></a>第三章 面向对象（2）</h1><a id="more"></a>
+<h2 id="3-4-类的成员之一：方法"><a href="#3-4-类的成员之一：方法" class="headerlink" title="3.4 类的成员之一：方法"></a>3.4 类的成员之一：方法</h2><ul>
 <li>语法格式：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名（参数列表）&#123;</span><br><span class="line">	方法体语句；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>说明：<ul>
 <li>修饰符：<code>public</code> <code>private</code> <code>protected</code> 等</li>
@@ -199,7 +199,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-5-匿名对象"><a href="#4-5-匿名对象" class="headerlink" title="4.5 匿名对象"></a>4.5 匿名对象</h2><ul>
+<h2 id="3-5-匿名对象"><a href="#3-5-匿名对象" class="headerlink" title="3.5 匿名对象"></a>3.5 匿名对象</h2><ul>
 <li>可以不定义对象的句柄，而直接调用这个对象的方法。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person();</span><br><span class="line">p.getAge();</span><br><span class="line"><span class="comment">// 可写成：</span></span><br><span class="line"><span class="keyword">new</span> Person().getAge();	<span class="comment">// 直接调用类为Person的对象中的方法getAge()</span></span><br></pre></td></tr></table></figure></li>
 <li>使用情况：<ul>
 <li>对一个对象<strong>只需要进行一次</strong>方法调用；</li>
@@ -207,15 +207,15 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-6-类的访问机制"><a href="#4-6-类的访问机制" class="headerlink" title="4.6 类的访问机制"></a>4.6 类的访问机制</h2><p>static 方法 不能 访问非 static 的成员变量。</p>
-<h2 id="4-7-方法的重载（overload）"><a href="#4-7-方法的重载（overload）" class="headerlink" title="4.7 方法的重载（overload）"></a>4.7 方法的重载（overload）</h2><ul>
+<h2 id="3-6-类的访问机制"><a href="#3-6-类的访问机制" class="headerlink" title="3.6 类的访问机制"></a>3.6 类的访问机制</h2><p>static 方法 不能 访问非 static 的成员变量。</p>
+<h2 id="3-7-方法的重载（overload）"><a href="#3-7-方法的重载（overload）" class="headerlink" title="3.7 方法的重载（overload）"></a>3.7 方法的重载（overload）</h2><ul>
 <li>在同一个类中，要使用同一个方法名，需要<strong>保证方法的参数个数或参数类型不同，参数顺序不同也可以重载</strong></li>
 <li>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">double</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a + b + c;</span><br><span class="line">&#125;		<span class="comment">//三者可共存于同一个类中</span></span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ul>
-<h2 id="4-8-未知传递参数个数"><a href="#4-8-未知传递参数个数" class="headerlink" title="4.8 未知传递参数个数"></a>4.8 未知传递参数个数</h2><ul>
+<h2 id="3-8-未知传递参数个数"><a href="#3-8-未知传递参数个数" class="headerlink" title="3.8 未知传递参数个数"></a>3.8 未知传递参数个数</h2><ul>
 <li>用数组的方式传递<strong>可变个数</strong>的参数：(<strong>如果没有参数，就要定义一个空数组或null</strong> 如：<code>p1.printInfo(null)</code>)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printInfo</span><span class="params">(String[] agrs)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; agrs.length; i++)&#123;</span><br><span class="line">	System.out.println(agrs[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>用Java特有的<code>...</code>方式传递可变个数(0-∞)的参数，使用时与数组方式相同：(<strong>如果没有参数，可以不填</strong> 如：<code>p1.printInfo1()</code>)<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printInfo1</span><span class="params">(String... agrs)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; agrs.length; i++)&#123;</span><br><span class="line">	System.out.println(agrs[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -231,18 +231,18 @@
 
 </li>
 </ul>
-<h2 id="4-9-方法的参数传递"><a href="#4-9-方法的参数传递" class="headerlink" title="4.9 方法的参数传递"></a>4.9 方法的参数传递</h2><ul>
+<h2 id="3-9-方法的参数传递"><a href="#3-9-方法的参数传递" class="headerlink" title="3.9 方法的参数传递"></a>3.9 方法的参数传递</h2><ul>
 <li>方法只有被调用才有意义</li>
 <li>基础<strong>变量值</strong>存在JVM内存的栈中；<strong>对象的值</strong>存在堆中，<strong>对象在堆中的地址</strong>存在栈中。</li>
 <li><strong>基本数据类型都是保存在栈内存中</strong>，<strong>引用对象在栈内存中保存的是引用对象的地址</strong>，那么<strong>方法的参数传递是传递值</strong>（是<strong>变量在栈内存中的值</strong>）</li>
 </ul>
-<h2 id="4-10-软件包"><a href="#4-10-软件包" class="headerlink" title="4.10 软件包"></a>4.10 软件包</h2><ul>
+<h2 id="3-10-软件包"><a href="#3-10-软件包" class="headerlink" title="3.10 软件包"></a>3.10 软件包</h2><ul>
 <li>关键字<code>package</code>，作为 Java 源文件的第一条语句，指明该文件中定义的类所在的包。如缺省该句，则定义为无名包，格式为：<code>package 顶层包名.子包名;</code></li>
 <li>包用<code>.</code>来代表层级，<strong>包名用小写单词</strong>，<strong>类名用首字母大写单词</strong></li>
 <li>在包里面<strong>引用</strong>其他包内的类，用语句： <code>import 包名.类名</code>。也可直接在类中写： <code>包名.类名</code></li>
 <li><code>import 包名.类名.*</code>  表示引用包下所有类</li>
 </ul>
-<h2 id="4-11-面向对象特征之一：封装和隐藏"><a href="#4-11-面向对象特征之一：封装和隐藏" class="headerlink" title="4.11 面向对象特征之一：封装和隐藏"></a>4.11 面向对象特征之一：封装和隐藏</h2><ul>
+<h2 id="3-11-面向对象特征之一：封装和隐藏"><a href="#3-11-面向对象特征之一：封装和隐藏" class="headerlink" title="3.11 面向对象特征之一：封装和隐藏"></a>3.11 面向对象特征之一：封装和隐藏</h2><ul>
 <li>通过将数据声明为私有的（private）, 再提供公共的（public）方法：<code>getXxx()</code>和<code>setXxx()</code>实现对该属性的操作，以实现：<ul>
 <li>使用者只能通过<strong>事先定制好的</strong>方法来访问数据，可以方便地加入控制逻辑，限制对属性的不合理操作；</li>
 <li>便于修改，增强代码的可维护性。<br>如：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;		<span class="comment">// 变量声明为私有</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">setAge</span> <span class="params">(a)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (a&lt;=<span class="number">150</span> &amp;&amp; a&gt;=<span class="number">0</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">"输入的年龄不符合要求"</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> (age = a)&#123;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">printAge</span> <span class="params">(age)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"年龄为："</span>+age+<span class="string">" 岁"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -252,7 +252,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="4-12-四种访问权限修饰符"><a href="#4-12-四种访问权限修饰符" class="headerlink" title="4.12 四种访问权限修饰符"></a>4.12 四种访问权限修饰符</h2><ul>
+<h2 id="3-12-四种访问权限修饰符"><a href="#3-12-四种访问权限修饰符" class="headerlink" title="3.12 四种访问权限修饰符"></a>3.12 四种访问权限修饰符</h2><ul>
 <li><p>Java权限修饰符 <code>public</code> <code>protected</code> <code>private</code> 置于类的成员定义前，用于限定对象对该类成员的访问权限。</p>
 <table>
 <thead>
@@ -305,7 +305,7 @@
 <li><p>在同一个Java文件中可以写多个class，<strong>但是只能有一个public类型</strong>，<strong>其他的类只能是缺省型</strong>。</p>
 </li>
 </ul>
-<h2 id="4-13-类的成员之三：构造器（构造方法）"><a href="#4-13-类的成员之三：构造器（构造方法）" class="headerlink" title="4.13 类的成员之三：构造器（构造方法）"></a>4.13 类的成员之三：构造器（构造方法）</h2><p><code>Person p = new Person();</code><br><strong>new 的由来：</strong><br>在定义方法 <code>public void Person(){}</code> 时，<code>Person(){}</code>内<strong>自动生成</strong> <code>public person(){}</code>, <strong>可以不写</strong></p>
+<h2 id="3-13-类的成员之三：构造器（构造方法）"><a href="#3-13-类的成员之三：构造器（构造方法）" class="headerlink" title="3.13 类的成员之三：构造器（构造方法）"></a>3.13 类的成员之三：构造器（构造方法）</h2><p><code>Person p = new Person();</code><br><strong>new 的由来：</strong><br>在定义方法 <code>public void Person(){}</code> 时，<code>Person(){}</code>内<strong>自动生成</strong> <code>public person(){}</code>, <strong>可以不写</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Person</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;	<span class="comment">// 自动生成的，可以不写，new 对象的由来</span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;`</span><br></pre></td></tr></table></figure>
 
 <p><strong>自定义构造器：</strong><br><strong>手动初始化:</strong></p>
@@ -333,7 +333,7 @@
 <p>构造器重载使得对象创建更加灵活，方便创建不同的对象：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> class <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String n)</span></span>&#123;	<span class="comment">// 构造器重载</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String n,<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>注意：构造器重载，参数列表必须不同。</strong></p>
-<h2 id="4-14-关键字-this"><a href="#4-14-关键字-this" class="headerlink" title="4.14 关键字 this"></a>4.14 关键字 this</h2><ul>
+<h2 id="3-14-关键字-this"><a href="#3-14-关键字-this" class="headerlink" title="3.14 关键字 this"></a>3.14 关键字 this</h2><ul>
 <li><code>this</code> 在<strong>方法内部</strong>使用，即<strong>这个方法所属对象的引用</strong>；</li>
 <li><code>this</code> 在<strong>构造器内部</strong>使用，<strong>表示该构造器正在初始化的对象</strong>；</li>
 <li><code>this</code> 表示当前对象，可以调用类的属性、方法和构造器；</li>
@@ -352,7 +352,7 @@
 <li>使用 <code>this()</code> 调用本类中的其他构造器，保证<strong>至少一个</strong>构造器是没有<code>this()</code>的。 （即<strong>不能自己调用自己</strong>）</li>
 </ol>
 </blockquote>
-<h2 id="4-15-JavaBean-实体类"><a href="#4-15-JavaBean-实体类" class="headerlink" title="4.15 JavaBean 实体类"></a>4.15 JavaBean 实体类</h2><ul>
+<h2 id="3-15-JavaBean-实体类"><a href="#3-15-JavaBean-实体类" class="headerlink" title="3.15 JavaBean 实体类"></a>3.15 JavaBean 实体类</h2><ul>
 <li><code>JavaBean</code> 是一种 Java 语言写成的<strong>可重用组件</strong></li>
 <li>所谓 <code>JavaBean</code>，是指符合如下标准的 Java 类： <blockquote>
 <ol>
@@ -448,8 +448,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/03/09/Java%E5%AD%A6%E4%B9%A05/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java语言程序设计学习笔记（五）</div>
+    <a href="/2020/03/11/Java%E5%AD%A6%E4%B9%A07/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java语言程序设计学习笔记（六）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -476,7 +476,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第四章-面向对象（2）"><span class="toc-number">1.</span> <span class="toc-text">第四章 面向对象（2）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-类的成员之一：方法"><span class="toc-number">1.1.</span> <span class="toc-text">4.4 类的成员之一：方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-匿名对象"><span class="toc-number">1.2.</span> <span class="toc-text">4.5 匿名对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-6-类的访问机制"><span class="toc-number">1.3.</span> <span class="toc-text">4.6 类的访问机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-7-方法的重载（overload）"><span class="toc-number">1.4.</span> <span class="toc-text">4.7 方法的重载（overload）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-8-未知传递参数个数"><span class="toc-number">1.5.</span> <span class="toc-text">4.8 未知传递参数个数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-9-方法的参数传递"><span class="toc-number">1.6.</span> <span class="toc-text">4.9 方法的参数传递</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-10-软件包"><span class="toc-number">1.7.</span> <span class="toc-text">4.10 软件包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-11-面向对象特征之一：封装和隐藏"><span class="toc-number">1.8.</span> <span class="toc-text">4.11 面向对象特征之一：封装和隐藏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-12-四种访问权限修饰符"><span class="toc-number">1.9.</span> <span class="toc-text">4.12 四种访问权限修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-13-类的成员之三：构造器（构造方法）"><span class="toc-number">1.10.</span> <span class="toc-text">4.13 类的成员之三：构造器（构造方法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-14-关键字-this"><span class="toc-number">1.11.</span> <span class="toc-text">4.14 关键字 this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-15-JavaBean-实体类"><span class="toc-number">1.12.</span> <span class="toc-text">4.15 JavaBean 实体类</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章-面向对象（2）"><span class="toc-number">1.</span> <span class="toc-text">第三章 面向对象（2）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-类的成员之一：方法"><span class="toc-number">1.1.</span> <span class="toc-text">3.4 类的成员之一：方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-匿名对象"><span class="toc-number">1.2.</span> <span class="toc-text">3.5 匿名对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-类的访问机制"><span class="toc-number">1.3.</span> <span class="toc-text">3.6 类的访问机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-方法的重载（overload）"><span class="toc-number">1.4.</span> <span class="toc-text">3.7 方法的重载（overload）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-未知传递参数个数"><span class="toc-number">1.5.</span> <span class="toc-text">3.8 未知传递参数个数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-方法的参数传递"><span class="toc-number">1.6.</span> <span class="toc-text">3.9 方法的参数传递</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-10-软件包"><span class="toc-number">1.7.</span> <span class="toc-text">3.10 软件包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-11-面向对象特征之一：封装和隐藏"><span class="toc-number">1.8.</span> <span class="toc-text">3.11 面向对象特征之一：封装和隐藏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-12-四种访问权限修饰符"><span class="toc-number">1.9.</span> <span class="toc-text">3.12 四种访问权限修饰符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-13-类的成员之三：构造器（构造方法）"><span class="toc-number">1.10.</span> <span class="toc-text">3.13 类的成员之三：构造器（构造方法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-14-关键字-this"><span class="toc-number">1.11.</span> <span class="toc-text">3.14 关键字 this</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-15-JavaBean-实体类"><span class="toc-number">1.12.</span> <span class="toc-text">3.15 JavaBean 实体类</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
