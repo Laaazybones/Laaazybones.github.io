@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Java语言程序设计学习笔记（六） | </title>
+  <title>Java语言程序设计学习笔记（三） | </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第四章 高级类特性（1）">
+  <meta name="description" content="第二章 Java基本语法（2）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java语言程序设计学习笔记（六）">
-<meta property="og:url" content="http://yoursite.com/2020/03/11/Java%E5%AD%A6%E4%B9%A07/index.html">
+<meta property="og:title" content="Java语言程序设计学习笔记（三）">
+<meta property="og:url" content="http://yoursite.com/2020/03/07/006%20Java%E5%AD%A6%E4%B9%A03/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="第四章 高级类特性（1）">
+<meta property="og:description" content="第二章 Java基本语法（2）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-05-19T13:16:01.581Z">
+<meta property="article:published_time" content="2020-03-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-19T11:16:36.733Z">
 <meta property="article:author" content="CoCo">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -65,10 +65,10 @@
 			</ul>
 		</nav>
 		<nav>
-    		总文章数 10
+    		总文章数 11
 		</nav>
 		<nav>
-   			总字数 <span class="post-count">9.9k</span>
+   			总字数 <span class="post-count">9.8k</span>
 		</nav>
 		
 		<nav class="header-smart-menu">
@@ -158,209 +158,71 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Java学习7" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-006 Java学习3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Java语言程序设计学习笔记（六）
+      Java语言程序设计学习笔记（三）
     </h1>
   
 
         
-        <a href="/2020/03/11/Java%E5%AD%A6%E4%B9%A07/" class="archive-article-date">
-  	<time datetime="2020-03-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-11</time>
+        <a href="/2020/03/07/006%20Java%E5%AD%A6%E4%B9%A03/" class="archive-article-date">
+  	<time datetime="2020-03-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-07</time>
 </a>
         
       </header>
       <div align="center" class="post-count">
-        字数：2.4k字 | 预计阅读时长：9分钟
+        字数：404字 | 预计阅读时长：1分钟
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第四章-高级类特性（1）"><a href="#第四章-高级类特性（1）" class="headerlink" title="第四章 高级类特性（1）"></a>第四章 高级类特性（1）</h1><a id="more"></a>
-
-<h2 id="4-1-面向对象特征之二：继承"><a href="#4-1-面向对象特征之二：继承" class="headerlink" title="4.1 面向对象特征之二：继承"></a>4.1 面向对象特征之二：继承</h2><ul>
-<li>用 <code>extends</code> 来继承父类（也称作<strong>基类</strong>或<strong>超类</strong>）的所有属性和方法</li>
-<li>继承的出现让类与类之间产生了关系，提供了多态的前提</li>
-<li>不要仅为了获取其他类中某个功能而去继承（如狗类不能继承人类）</li>
-<li><strong>子类不是父类的子集，而是父类的扩展</strong></li>
-<li>子类不能直接访问父类中 private 类型的成员变量和方法</li>
-<li>Java只支持单继承，不允许多重继承<ul>
-<li>一个子类只能有一个父类</li>
-<li>一个父类可以派生出多个子类</li>
-<li>只能单多层继承</li>
-</ul>
-</li>
-</ul>
-<h2 id="6-2-方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）"><a href="#6-2-方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）" class="headerlink" title="6.2 方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）"></a>6.2 方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）</h2><ul>
-<li>定义：在子类中可以根据需要对从父类中继承的方法进行改造，也称为<strong>方法的重置、覆盖</strong>。在执行程序时，<strong>子类的方法将覆盖父类的方法</strong>。</li>
-<li>要求：<ul>
-<li>重写方法必须和被重写方法有<strong>相同的方法名称</strong>、<strong>参数列表</strong>和<strong>返回值类型</strong>；</li>
-<li>重写方法不能使用比被重写方法更严格的访问权限；</li>
-<li>重写和被重写方法必须都是为 static 的 ， 或<strong>同时</strong>为非 static 的；</li>
-<li>子类方法抛出的异常不能大于父类被重写方法的异常。 </li>
-</ul>
-</li>
-</ul>
-<h2 id="6-3-关键字-super"><a href="#6-3-关键字-super" class="headerlink" title="6.3 关键字 super"></a>6.3 关键字 super</h2><ul>
-<li>在Java 类中使用 <code>super</code> 来调用父类中的指定操作：<ul>
-<li>super 可用于访问父类中定义的<strong>属性</strong>；</li>
-<li>super 可用于调用父类中定义的成员<strong>方法</strong>；</li>
-<li>super 可用于在子类构造方法中调用父类的<strong>构造器</strong>。<ul>
-<li>子类中所有的构造器默认都会访问父类中空参数的构造器；</li>
-<li>当父类中没有空参数的构造器时，子类的构造器必须通过 this(参数列表) 或者 super(参数列表) 语句指定调用本类或者父类中相应的构造器。<strong>且必须放在构造器的第一行</strong>。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>例如：<br>在父类中重定义了构造器 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Parent</span><span class="params">(<span class="keyword">int</span> age, <span class="keyword">int</span> sex)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"父类构造器"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在子类中，必须手动定义子类构造器 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Child</span><span class="params">(<span class="keyword">int</span> age, <span class="keyword">int</span> sex)</span></span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(age, sex);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<pre><code>- 如果子类构造器中既未显示调用父类或本类的构造器，且父类中又没有无参的构造器，则编译出错。</code></pre><p><strong>注意：</strong></p>
+        <h1 id="第二章-Java基本语法（2）"><a href="#第二章-Java基本语法（2）" class="headerlink" title="第二章 Java基本语法（2）"></a>第二章 Java基本语法（2）</h1><a id="more"></a>
+<h2 id="2-7-逻辑运算符"><a href="#2-7-逻辑运算符" class="headerlink" title="2.7 逻辑运算符"></a>2.7 逻辑运算符</h2><blockquote>
 <ul>
-<li>尤其当子父类出现同名成员时，可以用 super 进行区分；</li>
-<li>super 的追溯不仅限于直接父类；（<strong>使用super 子类可以调用他之上的所有父类层级</strong>）</li>
-<li>super 和 this 的用法相像，this 代表<strong>本类</strong>对象的引用，super 代表<strong>父类</strong>的内存空间的标识。</li>
+<li>且、或、抑或、非</li>
+<li><code>&amp;</code>与<code>&amp;&amp;</code>差别（<code>|</code>与<code>||</code>同理）<ul>
+<li>当<code>&amp;</code>时，左边无论真假，右边都要计算</li>
+<li>当<code>&amp;&amp;</code>时，如果左边为真，右边则参与计算；如果左边为假，右边则不计算        </li>
 </ul>
-<h2 id="6-4-this-和-super-的区别"><a href="#6-4-this-和-super-的区别" class="headerlink" title="6.4 this 和 super 的区别"></a>6.4 this 和 super 的区别</h2><table>
-<thead>
-<tr>
-<th align="center">No.</th>
-<th align="center">区别点</th>
-<th align="center">this</th>
-<th align="center">super</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">访问属性</td>
-<td align="center">访问本类中的属性，如果本类中没有此属性，则从父类中继续查找</td>
-<td align="center">访问父类集中的属性</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">调用方法</td>
-<td align="center">访问本类中的方法</td>
-<td align="center">直接访问父类中的方法</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">调用构造器</td>
-<td align="center">调用本类构造器，必须放在构造器的首行</td>
-<td align="center">调用父类构造器，必须放在子类构造器的首行（所以在子类中只能使用 this 或 super）</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">特殊</td>
-<td align="center">表示当前对象</td>
-<td align="center">无此概念</td>
-</tr>
-</tbody></table>
-<h2 id="6-5-简单类对象的实例化过程（设有一个Person类）"><a href="#6-5-简单类对象的实例化过程（设有一个Person类）" class="headerlink" title="6.5 简单类对象的实例化过程（设有一个Person类）"></a>6.5 简单类对象的实例化过程（设有一个Person类）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">int</span> age = <span class="number">1</span>;</span><br><span class="line">	String name = <span class="string">"zhangsan"</span>;</span><br><span class="line">	<span class="keyword">int</span> sex = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showInfo</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="keyword">this</span>.age);</span><br><span class="line">		System.out.println(<span class="keyword">this</span>.name);</span><br><span class="line">		System.out.println(<span class="keyword">this</span>.sex);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setInfo</span><span class="params">(<span class="keyword">int</span> age, String name, <span class="keyword">int</span> sex)</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.age = age;</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">		<span class="keyword">this</span>.sex = sex;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<h2 id="2-8-位运算符（二进制运算）"><a href="#2-8-位运算符（二进制运算）" class="headerlink" title="2.8 位运算符（二进制运算）"></a>2.8 位运算符（二进制运算）</h2><blockquote>
+<p>m&lt;&lt;n == m*(2^n)    如: 1&lt;&lt;2 == 4 ; 3&lt;&lt;3 == 24<br>m&gt;&gt;n == m/(2^n)    负数右移二进制数前面补1，正数右移二进制数前面补0<br>&gt;&gt;&gt;无符号右移，正数的右移与普通右移一致；负数右移二进制前面补0（无&lt;&lt;&lt;）<br>与运算<code>&amp;</code> <code>|</code> <code>^</code> <code>~</code></p>
+</blockquote>
+<h2 id="2-9-三目运算符"><a href="#2-9-三目运算符" class="headerlink" title="2.9 三目运算符"></a>2.9 三目运算符</h2><p> <code>（表达式）? 表达式1:表达式2</code></p>
+<h2 id="2-10-运算符的优先级"><a href="#2-10-运算符的优先级" class="headerlink" title="2.10 运算符的优先级"></a>2.10 运算符的优先级</h2><ul>
+<li>单目、三目、赋值运算符从右到左</li>
+<li>优先级：<strong>算数运算符&gt;比较运算符&gt;逻辑运算符</strong></li>
+</ul>
+<h2 id="2-11-程序流程控制"><a href="#2-11-程序流程控制" class="headerlink" title="2.11 程序流程控制"></a>2.11 程序流程控制</h2><ul>
+<li>顺序结构 </li>
+<li>分支结构<ul>
+<li><code>if-else</code> <code>switch{case;default}</code></li>
+<li><code>switch(表达式)</code> 中表达式的返回值必须是下述类型之一：<code>byte</code> <code>short</code> <code>char</code> <code>int</code> <code>String</code> <code>枚举</code></li>
+<li>case 子句中的值应当是常量 </li>
+</ul>
+</li>
+<li>循环结构<ul>
+<li><code>for()</code></li>
+<li><code>while()</code></li>
+<li><code>do-while()</code></li>
+</ul>
+</li>
+<li>特殊流程控制语句<ul>
+<li><code>break</code> 终止当前所在循环 只用于switch 和 循环语句中</li>
+<li><code>continue</code> 跳出当前循环 只用于循环语句中</li>
+<li><code>return</code> 并非专门用于结束循环，功能为：<strong>结束一个方法。当一个方法执行到return语句时，这个方法被结束。</strong></li>
+<li>与<code>break</code> 和 <code>continue</code> 不同在于，不论多少层循环，<code>return</code>直接终止该方法。</li>
+</ul>
+</li>
+</ul>
 
-<p>========================================================================<br>                                    JVM内存</p>
-<hr>
-<p>栈内存                                |          堆内存<br>5. 构造函数方法进栈，进行初始化        |    3. 在堆内存中开辟空间，分配地址。设地址为BE2500<br>6. 初始化完毕后，将堆内存中的地址值赋给        |    4. 并在对象空间中，对对象的属性进行默认初始化。<br>    引用变量。构造方法出栈。        |       此时 age = 0, name = null, sex = 0.<br>                    |       类成员变量显示初始化，<br>2. 在栈中申请空间，声明变量 p         |       此时 age = 1, name = “zhangsan”, sex = 0<br>                    |<br>p BE2500                 |</p>
-<hr>
-<pre><code>       方法区                                    
-1. 加载 Person.class             </code></pre><p>========================================================================   </p>
-<h2 id="6-6-面向对象特征之三：多态性"><a href="#6-6-面向对象特征之三：多态性" class="headerlink" title="6.6 面向对象特征之三：多态性"></a>6.6 面向对象特征之三：多态性</h2><ul>
-<li><p>面向对象中最重要的概念，在 Java 中有两种体现：</p>
-<ul>
-<li>方法的重载（overload）(本类中的同名方法，相同的名称实现不同的逻辑)和重写（overwrite）（子类对父类方法的覆盖） （方法的多态）</li>
-<li>对象的多态性——可以直接应用在抽象类和接口上。</li>
-</ul>
-</li>
-<li><p>Java引用变量有两个类型：编译时类型和运行时类型。（对象的多态）</p>
-<ul>
-<li>编译时类型：由声明该变量时使用的类型决定</li>
-<li>运行时类型：由实际赋给该变量的对象决定。</li>
-</ul>
-</li>
-<li><p>若编译时类型和运行时类型不一致，就会出现多态（Polymorphism） </p>
-</li>
-<li><p>对象的多态：在Java中，子类的对象可以替代父类的对象使用</p>
-<ul>
-<li><p>一个变量只能有一种确定的数据类型</p>
-</li>
-<li><p>一个引用类型变量可能指向（引用）多种不同类型的对象<br>  如： </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Student();	<span class="comment">// 父类的引用对象可以指向子类的实例（子类的实例new Student()可以赋值给父类声明的变量）</span></span><br><span class="line">Person e = <span class="keyword">new</span> Student(); 	<span class="comment">// Person类型的变量e，指向Student类型的对象</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>子类可以看作特殊的父类，所以父类类型的引用可以指向子类的对象：向上转型（upcasting）</p>
-</li>
-<li><p>一个引用类型变量如果声明为父类的类型，但实际引用的是子类对象，那么该对象就不能再访问子类中添加的属性和方法<br>  如： </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Student s = <span class="keyword">new</span> Student();</span><br><span class="line">s.school = <span class="string">"pku"</span>; <span class="comment">// 合法, School类中有school成员变量</span></span><br><span class="line">Person e = <span class="keyword">new</span> Student();</span><br><span class="line">e.school = <span class="string">"pku"</span>;<span class="comment">// 非法，Person类中没有school成员变量</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>属性是在编译时确定的，编译时 e 为 Person 类型，没有 school 成员变量，因而编译错误。 </li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>虚拟方法调用（Virtual Method Invocation）</p>
-<ul>
-<li><p>正常的方法调用</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Person p = <span class="keyword">new</span> Person();</span><br><span class="line">p.getInfo();</span><br><span class="line">Student s = <span class="keyword">new</span> Student();</span><br><span class="line">s.getInfo();</span><br></pre></td></tr></table></figure></li>
-<li><p>虚拟方法调用（多态情况下）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Person e = <span class="keyword">new</span> Student();</span><br><span class="line">e.getInfo();	<span class="comment">// 调用Student类的getInfo()方法</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编译时类型和运行时类型<br>   编译时，e 为 Person 类型，而方法的调用是在运行时确定的，所以调用的是 Student 类的 getInfo() 方法。————动态绑定</p>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>小结</strong></p>
-<ul>
-<li>前提：<ul>
-<li>需要存在继承或实现关系</li>
-<li>要有覆盖操作（子类重写父类方法）</li>
-</ul>
-</li>
-<li>成员方法：<ul>
-<li>成员方法的多态性，也就是动态绑定，必须得存在于方法的重写之上</li>
-<li>编译时：要查看引用变量所属的类中是否有所调用的方法</li>
-<li>运行时：调用实际对象所属的类中的重写方法。</li>
-</ul>
-</li>
-<li>成员变量：<ul>
-<li>不具备多态性，只看引用变量所属的类。</li>
-</ul>
-</li>
-<li>子类继承父类：<ul>
-<li>若子类重写了父类方法，就意味着子类里定义的方法<strong>彻底覆盖</strong>了父类里的同名方法，系统将不可能把父类里的方法转移到子类中。（重写后子类调用自己的方法）</li>
-<li>对于实例变量（对象）则不存在这种现象，即使子类里定义了与父类同名的实例变量，这个实例变量依然不可能覆盖父类中定义的实例变量</li>
-</ul>
-</li>
-</ul>
-<h2 id="6-7-instanceof-操作符（检验某个对象是不是类A的子类）"><a href="#6-7-instanceof-操作符（检验某个对象是不是类A的子类）" class="headerlink" title="6.7 instanceof 操作符（检验某个对象是不是类A的子类）"></a>6.7 instanceof 操作符（检验某个对象是不是类A的子类）</h2><p><code>x instanceof A</code>: 检验 x 是否为类 A 的对象，返回值为 Boolean 型。</p>
-<ul>
-<li>要求 x 所属的类和类 A 必须是子类和父类的关系，否则编译报错。</li>
-<li>如果 x 属于类 A 的子类 B ，x instanceof A 值为 true。<br>   例如： <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Student s = <span class="keyword">new</span> Student();</span><br><span class="line">Person p = <span class="keyword">new</span> Person();</span><br><span class="line">Person e = <span class="keyword">new</span> Student();</span><br><span class="line">System.out.println(s <span class="keyword">instanceof</span> Person);	<span class="comment">// true</span></span><br><span class="line">System.out.println(p <span class="keyword">instanceof</span> Person);	<span class="comment">// true</span></span><br><span class="line">System.out.println(p <span class="keyword">instanceof</span> Student); <span class="comment">// fauls</span></span><br><span class="line">System.out.println(e <span class="keyword">instanceof</span> Student); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<h2 id="6-8-Object-类"><a href="#6-8-Object-类" class="headerlink" title="6.8 Object 类"></a>6.8 Object 类</h2><ul>
-<li>Object 类是所有 Java 方法类的根父类（基类）(多层继承，属于最高层的父类 一 定是 Object 类)</li>
-<li>如果在类的声明中未使用 extends 关键字指明其父类，则默认父类为 Object 类：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-等价于    <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> <span class="keyword">extends</span> <span class="title">Object</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 当不确定方法传进来的实参是什么类时，可以将该方法的形参设置为Object类</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(Object obj)</span> </span>&#123;		<span class="comment">// 形参为Object类时，传入的实参可以为任何类</span></span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Test t = <span class="keyword">new</span> Test();</span><br><span class="line">		Person p = <span class="keyword">new</span> Person();</span><br><span class="line">		Child c = <span class="keyword">new</span> Child();</span><br><span class="line">		t.test(p);</span><br><span class="line">		t.test(p);</span><br><span class="line">		t.test(c);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>Object 类中的主要方法：<br>|1 | public Object() |    构造 | 构造方法 |<br>|:—:|:—:|:—:|:—:|<br>|2 | public boolean equals(Object obj) |  普通 |  对象比较 |<br>|3 |        public int hashCode()     | 普通 | 取得 Hash 码|<br>|4 |      public String toString() | 普通 | 对象打印时调用（打印当前引用对象的内存地址）|</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 当不确定方法传进来的实参是什么类时，可以将该方法的形参设置为Object类</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Test t = <span class="keyword">new</span> Test();</span><br><span class="line">		Person p = <span class="keyword">new</span> Person();</span><br><span class="line">		Child c = <span class="keyword">new</span> Child();</span><br><span class="line">		t.test(p);</span><br><span class="line">		t.test(p);</span><br><span class="line">		t.test(c);</span><br><span class="line"></span><br><span class="line">		Person e = <span class="keyword">new</span> Person();			<span class="comment">// 这里相当于在堆内存中申请了名为p和e的Person()对象，两个对象指向栈内存的地址是不同的。</span></span><br><span class="line">		System.out.println(p.equals(e));	<span class="comment">// fauls</span></span><br><span class="line">		<span class="comment">// e = p; 此时System.out.println(p.equals(e));输出结果为true，相当于把在栈内存中的p的地址赋值给e，使e重新指向p所指向的对象Person()。</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -429,7 +291,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/11/Java%E5%AD%A6%E4%B9%A07/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/07/006%20Java%E5%AD%A6%E4%B9%A03/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -443,18 +305,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/03/11/Java%E5%AD%A6%E4%B9%A06/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/03/07/005%20%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Java语言程序设计学习笔记（六）
+          利用GitHub给图片创建外链，用Markdown插入并显示
         
       </div>
     </a>
   
   
-    <a href="/2020/03/09/Java%E5%AD%A6%E4%B9%A05/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java语言程序设计学习笔记（五）</div>
+    <a href="/2020/03/06/004%20Java%E5%AD%A6%E4%B9%A02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java语言程序设计学习笔记（二）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -481,7 +343,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第四章-高级类特性（1）"><span class="toc-number">1.</span> <span class="toc-text">第四章 高级类特性（1）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-面向对象特征之二：继承"><span class="toc-number">1.1.</span> <span class="toc-text">4.1 面向对象特征之二：继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-2-方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）"><span class="toc-number">1.2.</span> <span class="toc-text">6.2 方法的重写（override）（子类重写父类的方法，只是重新编写方法体的代码）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-3-关键字-super"><span class="toc-number">1.3.</span> <span class="toc-text">6.3 关键字 super</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-4-this-和-super-的区别"><span class="toc-number">1.4.</span> <span class="toc-text">6.4 this 和 super 的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-5-简单类对象的实例化过程（设有一个Person类）"><span class="toc-number">1.5.</span> <span class="toc-text">6.5 简单类对象的实例化过程（设有一个Person类）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-6-面向对象特征之三：多态性"><span class="toc-number">1.6.</span> <span class="toc-text">6.6 面向对象特征之三：多态性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-7-instanceof-操作符（检验某个对象是不是类A的子类）"><span class="toc-number">1.7.</span> <span class="toc-text">6.7 instanceof 操作符（检验某个对象是不是类A的子类）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-8-Object-类"><span class="toc-number">1.8.</span> <span class="toc-text">6.8 Object 类</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-Java基本语法（2）"><span class="toc-number">1.</span> <span class="toc-text">第二章 Java基本语法（2）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-逻辑运算符"><span class="toc-number">1.1.</span> <span class="toc-text">2.7 逻辑运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-位运算符（二进制运算）"><span class="toc-number">1.2.</span> <span class="toc-text">2.8 位运算符（二进制运算）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-三目运算符"><span class="toc-number">1.3.</span> <span class="toc-text">2.9 三目运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-10-运算符的优先级"><span class="toc-number">1.4.</span> <span class="toc-text">2.10 运算符的优先级</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-11-程序流程控制"><span class="toc-number">1.5.</span> <span class="toc-text">2.11 程序流程控制</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -595,6 +457,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">阅读</a>
               </li>
             
             <div class="clearfix"></div>
